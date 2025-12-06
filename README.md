@@ -23,7 +23,7 @@ set font family to `Liga DM Mono` and enable ligatures:
 
 Open Ghostty settings (`Cmd` + `,`) and set font family to `Liga DM Mono`:
 
-```json
+```ini
 font-family = Liga DM Mono
 ```
 
