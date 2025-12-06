@@ -3,6 +3,8 @@
 Patches DM Mono with Fira Code ligatures via Ligaturizer.
 Runs on macOS with git and Homebrew.
 
+![Liga DM Mono in Ghostty. Theme: Dracula+](documentation/screenshot-ghostty.png)
+
 ## Setup
 
 Install the ligaturized fonts from `fonts/` using your OS font manager.
@@ -31,11 +33,7 @@ Press `Cmd` + `Shift` + `,` to reload the terminal with the new configuration.
 
 ## Build
 
-```bash
-make
-```
-
-The Makefile will:
+Run `make` in the repository root. The Makefile will:
 
 - Clone Ligaturizer (plus only the `fonts/fira` submodule) and DM Mono.
 - Patch Ligaturizer options to target DM Mono and drop selected ligatures.
@@ -47,13 +45,7 @@ The Makefile will:
 
 These ligatures from Fira Code are intentionally omitted:
 
-- `&&`
-- `;;`
-- `.?`
-- `?:`
-- `?=`
-- `?.`
-- `??`
+`&&`, `;;`, `.?`, `?:`, `?=`, `?.`, `??`
 
 ### Output
 
