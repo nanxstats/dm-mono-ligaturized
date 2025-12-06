@@ -1,6 +1,6 @@
 # DM Mono with Fira Code Ligatures
 
-Automates building DM Mono fonts with Fira Code ligatures via Ligaturizer.
+Patches DM Mono with Fira Code ligatures via Ligaturizer.
 Runs on macOS with git and Homebrew.
 
 ## Usage
