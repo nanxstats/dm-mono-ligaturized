@@ -1,4 +1,4 @@
-# DM Mono with Fira Code Ligatures
+# DM Mono Ligaturized
 
 DM Mono patched with Fira Code ligatures via Ligaturizer.
 
