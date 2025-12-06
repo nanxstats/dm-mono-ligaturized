@@ -18,6 +18,7 @@ set font family to `Liga DM Mono` and enable ligatures:
 "editor.fontFamily": "'Liga DM Mono', monospace",
 "editor.fontLigatures": "'calt', 'liga'",
 "terminal.integrated.fontFamily": "'Liga DM Mono', monospace",
+"terminal.integrated.fontLigatures.enabled": true,
 ```
 
 ### Ghostty
