@@ -3,7 +3,33 @@
 Patches DM Mono with Fira Code ligatures via Ligaturizer.
 Runs on macOS with git and Homebrew.
 
-## Usage
+## Setup
+
+Install the ligaturized fonts from `fonts/` using your OS font manager.
+
+### VS Code
+
+In VS Code, press `Cmd` + `Shift` + `P`, search for
+`Preferences: Open User Settings (JSON)`. In the opened `settings.json`,
+set font family to `Liga DM Mono` and enable ligatures:
+
+```json
+"editor.fontFamily": "'Liga DM Mono', monospace",
+"editor.fontLigatures": "'calt', 'liga'",
+"terminal.integrated.fontFamily": "'Liga DM Mono', monospace",
+```
+
+### Ghostty
+
+Open Ghostty settings (`Cmd` + `,`) and set font family to `Liga DM Mono`:
+
+```json
+font-family = Liga DM Mono
+```
+
+Press `Cmd` + `Shift` + `,` to reload the terminal with the new configuration.
+
+## Build
 
 ```bash
 make
@@ -17,7 +43,7 @@ The Makefile will:
 - Copy the ligaturized DM Mono font files into `fonts/`.
 - Remove the cloned sources.
 
-## Dropped ligatures
+### Dropped ligatures
 
 These ligatures from Fira Code are intentionally omitted:
 
@@ -29,7 +55,7 @@ These ligatures from Fira Code are intentionally omitted:
 - `?.`
 - `??`
 
-## Output
+### Output
 
 Ligaturized fonts land in `fonts/`:
 
