@@ -84,13 +84,16 @@ $(LIGATURIZER_DIR)/.patched: Makefile $(LIGATURIZER_DIR)/.git $(LIGATURIZER_DIR)
 	@tmp=$$(mktemp) && \
 	awk 'BEGIN { \
 		skip=0; \
-		targets["    {   # &&"]=1; \
-		targets["    {   # .?"]=1; \
-		targets["    {   # ?:"]=1; \
-		targets["    {   # ?="]=1; \
-		targets["    {   # ?."]=1; \
-		targets["    {   # ??"]=1; \
-		targets["    {   # ;;"]=1; \
+		targets["    {   # &&"]=1;  \
+		targets["    {   # ~@"]=1;  \
+		targets["    {   # \\/"]=1; \
+		targets["    {   # .?"]=1;  \
+		targets["    {   # ?:"]=1;  \
+		targets["    {   # ?="]=1;  \
+		targets["    {   # ?."]=1;  \
+		targets["    {   # ??"]=1;  \
+		targets["    {   # ;;"]=1;  \
+		targets["    {   # /\\"]=1; \
 	} \
 	targets[$$0] { skip=1; next } \
 	skip && $$0 ~ /^[[:space:]]*},[[:space:]]*$$/ { skip=0; next } \

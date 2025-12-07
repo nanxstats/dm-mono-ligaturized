@@ -47,7 +47,7 @@ The Makefile will:
 
 These ligatures from Fira Code are intentionally omitted:
 
-`&&`, `;;`, `.?`, `?:`, `?=`, `?.`, `??`
+`&&`, `~@`, `\/`, `.?`, `?:`, `?=`, `?.`, `??`, `;;`, `/\`
 
 ### Output
 
