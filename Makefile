@@ -37,13 +37,13 @@ $(OUTPUT_DIR):
 	mkdir -p $@
 
 $(LIGATURIZER_DIR)/.git:
-	git clone git@github.com:ToxicFrog/Ligaturizer.git $(LIGATURIZER_DIR)
+	git clone https://github.com/ToxicFrog/Ligaturizer.git $(LIGATURIZER_DIR)
 
 $(LIGATURIZER_DIR)/fonts/fira/.git: $(LIGATURIZER_DIR)/.git
 	git -C $(LIGATURIZER_DIR) submodule update --init --depth 1 fonts/fira
 
 $(DM_MONO_DIR)/.git:
-	git clone git@github.com:googlefonts/dm-mono.git --depth 1 $(DM_MONO_DIR)
+	git clone https://github.com/googlefonts/dm-mono.git --depth 1 $(DM_MONO_DIR)
 
 $(DM_TARGET_DIR)/.prepared: $(DM_MONO_DIR)/.git $(LIGATURIZER_DIR)/.git
 	rm -rf $(DM_TARGET_DIR)
