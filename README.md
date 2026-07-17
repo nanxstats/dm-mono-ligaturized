@@ -6,7 +6,13 @@ DM Mono patched with Fira Code ligatures via Ligaturizer.
 
 ## Setup
 
-Install the ligaturized fonts from `fonts/` using your OS font manager.
+Install with Homebrew:
+
+```bash
+brew install --cask nanxstats/tap/font-dm-mono-ligaturized
+```
+
+Or install the ligaturized fonts from `fonts/` using your OS font manager.
 
 ### VS Code
 
